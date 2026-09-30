@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Assignment</title>
+</head>
+<body>
+    <h1>Robot Assignment</h1>
+
+    <script>
+        const robot = {
+            name: "Robby",
+            manufacturer: "RoboTech",
+
+            skillset: {
+                skill1: "cooking",
+                skill2: "cleaning",
+                skill3: "gardening"
+            },
+
+            hasSkill: function(skill) {
+                if (skill === this.skillset.skill1 ||
+                    skill === this.skillset.skill2 ||
+                    skill === this.skillset.skill3) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        };
+
+        console.log("Name: " + robot.name);
+        console.log("Manufacturer: " + robot.manufacturer);
+        console.log("Skill 1: " + robot.skillset.skill1);
+        console.log("Skill 2: " + robot.skillset.skill2);
+        console.log("Skill 3: " + robot.skillset.skill3);
+
+        console.log("Has cooking skill: " + robot.hasSkill("cooking"));
+        console.log("Has swimming skill: " + robot.hasSkill("swimming"));
+    </script>
+</body>
+</html>
